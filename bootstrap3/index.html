@@ -1,29 +1,309 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="sass/custom.css">
-</head>
-<style>
-    @media(max-width:100%) {
-        .alto-100{
-            height: 100%;
-        }
-    }
-</style>
-<body class="">
-   <nav class="navbar navbar-expand-lg navbar-light w-100 bg-secondary row">
-            <div class="row bg-primary">
-                <p>Hola</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./sass/custom.css">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <!--MENU DE NAVEGACION-->
+    <nav class=" bg-dark text-white">
+        <div class="logo ">
+        <p>
+          Abraham Pech
+        </p>
+      </div>
+      <ul>
+        <li>
+          <a href="#" class="link btn btn-primary">
+            inicio
+          </a>
+          
+        </li>
+        <li>
+          <a href="#" class="link">
+            Sobre nosotros
+          </a>
+        </li>
+        <li>
+          <a href="#" class="link">
+            Contactanos
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <img src="./img/person.svg" alt="">
+        </li>
+        <li style="display: flex; align-items: center;">
+          <img src="./img/search.svg" alt="">
+        </li>
+        <li>
+          <img src="./img/cart.svg" alt="">
+        </li>
+      </ul>
+    </nav>
+    <!--BANNER-->
+    <header class="w-100">
+      <div class="banner">
+        <div class="overlay">
+          <h1 style="color: white; margin: 0;">
+            Tu fragancia de paz
+          </h1>
+          <h1 class="text-white" style="text-align: center; margin: 0;">
+            Muele bien, huele increible
+          </h1>
+          <p class="text-white" style="margin: 0; text-align: center;">
+            10% de descuento
+          </p>
+          <div style="display: flex; justify-content: center; margin-top: 1rem;">
+            <button class="btn btn-primary">
+              Comprar ahora
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--GRID DE 2 X 4-->
+    <main>
+      <div class="list-header">
+        <h3 style="text-align: center;">
+          Productos estrella
+        </h3>
+        <div class="buttonry">
+          <button class="btn">
+            nuevas entradas
+          </button>
+          <button class="btn btn-primary">
+            best sellers
+          </button>
+          <button class="btn">
+            servicios
+          </button>
+        </div>
+      </div>
+      <div class="cards-container grid-container">
+        <div class="card border-0">
+          <img src="perfumes/Perfume1.jpg" alt="">
+          <p>Nombre del perfume 1</p>
+          <p>Precio: $299.99</p>
+          <button class="btn" style="background-color: #18202D; color: white;">Comprar</button>
+        </div>
+        <div class="card border-0">
+          <img src="perfumes/Perfume2.avif" alt="">
+          <p>Nombre del perfume 2</p>
+          <p>Precio: $299.99</p>
+          <button class="btn" style="background-color: #18202D; color: white;">Comprar</button>
+        </div>
+        <div class="card border-0">
+          <img src="perfumes/Perfume3.jpg" alt="">
+          <p>Nombre del perfume 3</p>
+          <p>Precio: $299.99</p>
+          <button class="btn" style="background-color: #18202D; color: white;">Comprar</button>
+        </div>
+        <div class="card border-0">
+          <img src="perfumes/Perfume4.webp" alt="">
+          <p>Nombre del perfume 4</p>
+          <p>Precio: $299.99</p>
+          <button class="btn" style="background-color: #18202D; color: white;">Comprar</button>
+        </div>
+      </div>
+      <div class="cards-container grid-container">
+        <div class="card border-0">
+          <img src="perfumes/Perfume5.avif" alt="">
+          <p>Nombre del perfume 5</p>
+          <p>Precio: $299.99</p>
+          <button class="btn" style="background-color: #18202D; color: white;">Comprar</button>
+        </div>
+        <div class="card border-0">
+          <img src="perfumes/Perfume6.avif" alt="">
+          <p>Nombre del perfume 6</p>
+          <p>Precio: $299.99</p>
+          <button class="btn" style="background-color: #18202D; color: white;">Comprar</button>
+        </div>
+        <div class="card border-0">
+          <img src="perfumes/Perfume7.avif" alt="">
+          <p>Nombre del perfume 7</p>
+          <p>Precio: $299.99</p>
+          <button class="btn" style="background-color: #18202D; color: white;">Comprar</button>
+        </div>
+        <div class="card border-0">
+          <img src="perfumes/Perfume8.avif" alt="">
+          <p>Nombre del perfume 8</p>
+          <p>Precio: $299.99</p>
+          <button class="btn" style="background-color: #18202D; color: white;">Comprar</button>
+        </div>
+      </div>      
+    </main>
+  <!--SECCION IMG - TEXTO-->
+
+  <div class="d-flex bg-primary custom-height">
+    <div class="row w-100">
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <div class="img-container">
+          <img src="img/ultimo.webp" alt="Imagen">
+        </div>
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+        <div class=" col-md-6">
+          <h2>Texto</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aut nesciunt at natus quibusdam doloribus? Laborum mollitia a, explicabo sapiente dolor dolorem fugit nemo recusandae illo natus possimus, odit nisi.</p>
+          <a href="#" class="btn btn-dark ">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- GRID DE 2 X 3-->
+  <div class="cards-container grid-container mt-4">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-6">
+          <img src="perfumes/Perfume1.jpg" alt="" srcset="">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Nombre del perfume 1</h5>
+            <p class="card-text">Precio: $299.99</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-6">
+          <img src="perfumes/Perfume2.avif" alt="" srcset="">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Nombre del perfume 2</h5>
+            <p class="card-text">Precio: $299.99</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-6">
+          <img src="perfumes/Perfume3.avif" alt="" srcset="">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Nombre del perfume 3</h5>
+            <p class="card-text">Precio: $299.99</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cards-container grid-container">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-6">
+          <img src="perfumes/Perfume6.avif" alt="" srcset="">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Nombre del perfume 6</h5>
+            <p class="card-text">Precio: $299.99</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-6">
+          <img src="perfumes/Perfume7.avif" alt="" srcset="">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Nombre del perfume 7</h5>
+            <p class="card-text">Precio: $299.99</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-6">
+          <img src="perfumes/Perfume8.avif" alt="" srcset="">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Nombre del perfume 8</h5>
+            <p class="card-text">Precio: $299.99</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCION TEXTO - IMG-->
+  <div class="d-flex bg-primary custom-height">
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+      <div class=" col-md-6">
+        <h2>Texto</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aut nesciunt at natus quibusdam doloribus? Laborum mollitia a, explicabo sapiente dolor dolorem fugit nemo recusandae illo natus possimus, odit nisi.</p>
+      </div>
+    </div>
+    <div class="row w-100">
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <div class="img-container">
+          <img src="img/mid.webp" alt="Imagen">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FOTTER DE INFORMACION-->
+  <footer class="footer bg-dark text-white py-5 px-5">
+    <div class="container">
+        <div class="row gutter-x">
+            <div class="col-md-3">
+                <h5>Contact Info</h5>
+                <address>
+                    1234 Calle Paris<br>
+                    Phone: (999) 999-999<br>
+                    Email: ejemplo@ejemplo.com
+                </address>
             </div>
-            <div class="row">
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
+            <div class="col-md-3">
+                <h5>Information</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
             </div>
-   </nav>
-</body>
+            <div class="col-md-3">
+                <h5>Extras</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Gift Vouchers</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Specials</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>My Account</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Wish List</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
